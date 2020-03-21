@@ -24,9 +24,12 @@ export default class App extends React.Component {
       <div className="container">
         <h1>Todo</h1>
         {
-          this.state.todos.map((todo, i) => {
+          // Map over todos array and pass each todo into the
+          // TodoItem
+          this.state.todos.map((todo) => {
             return (
               <TodoItem
+                key={todo._id}
                 todo={todo}
               />
             )
