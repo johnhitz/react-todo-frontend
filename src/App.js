@@ -1,12 +1,13 @@
 import React from 'react';
+import './App.css'
+import todos from './data.js'
 import TodoItem from './components/TodoItem'
-import {dataArr} from './dataArr.js'
 
 export default class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      todos: dataArr
+      todos: todos
     }
     // this.getData = this.getData.bind(this)
   }
@@ -18,26 +19,19 @@ export default class App extends React.Component {
 //   this.setState({ todos: dataArr})
 // }
   render() {
-
+    console.log(`Todos are: `, this.state.todos);
     return(
       <div className="container">
         <h1>Todo</h1>
         {
           this.state.todos.map((todo, i) => {
-            console.log(`App Todo: `, todo.item, i);
             return (
-              <ul>
-                <TodoItem
-                  key={this.state.todos.id}
-                  index={i}
-                  todo={todo}
-                />
-              </ul>
+              <TodoItem
+                todo={todo}
+              />
             )
           })
         }
-
-        <TodoItem />
       </div>
     )
   }

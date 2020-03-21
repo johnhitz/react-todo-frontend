@@ -13,12 +13,10 @@ export default class TodoItem extends React.Component {
   }
   render() {
     const { todo = [] } = this.props
-    console.log(`TodoItem Todo: `, todo.item, this.props.index);
     return (
       <div>
         <li
-          >
-
+        >{this.props.todo.item}
           <div className="button-group">
             <button className="btn btn-primary">Edit</button>
             <button

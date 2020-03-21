@@ -1,12 +1,8 @@
-export const dataArr = [
+const todos = [
   {
     id: 0,
     item: `Make a react todo app front-end`,
     description: `Use the $ npx create-react-app command to create the app`
-  },
-  {
-    id: 1,
-    item: `Create a List component: display ea item`
   },
   {
     id: 2,
@@ -37,3 +33,5 @@ export const dataArr = [
     description: `The hide function should hide the item with a ternary operator and will be located in the List component.`
   }
 ]
+
+export default todos
