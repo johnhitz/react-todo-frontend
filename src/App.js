@@ -9,20 +9,16 @@ export default class App extends React.Component {
     this.state = {
       todos: todos
     }
-    // this.getData = this.getData.bind(this)
   }
-// componentDidMount() {
-//   this.getData()
-// }
-//
-// getData() {
-//   this.setState({ todos: dataArr})
-// }
+  addTodo() {
+    
+  }
+
   render() {
     console.log(`Todos are: `, this.state.todos);
     return(
       <div className="container">
-        <h1>Todo</h1>
+          <button className="button btn btn-primary btn-lg todo">Todo + </button>
         {
           // Map over todos array and pass each todo into the
           // TodoItem

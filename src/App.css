@@ -16,3 +16,9 @@ button {
   display: inline;
   padding: 5px;
 }
+
+.todo{
+  color: BLUE;
+  background: white;
+  border: 0;
+}
