@@ -11,16 +11,16 @@ const todos = [
   },
   {
     _id: 2,
+    item: `Create a component for Description`,
+    description: `The description component should be an textarea
+    and should display onMouseOver of each item in the list. It should stick if the user clicks the list item.`
+  },
+  {
+    _id: 3,
     item: `Create a component for AddItem`,
     description: `The add from component should
     display when the [Add Button] is clicked. It will hold the
     todo(name) and description in it's state.`
-  },
-  {
-    _id: 3,
-    item: `Create a component for Description`,
-    description: `The description component should be an textarea
-    and should display onMouseOver of each item in the list. It should stick if the user clicks the list item.`
   },
   {
     _id: 4,
